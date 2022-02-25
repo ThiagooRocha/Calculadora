@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,48 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="./Style CSS/Style.css">
     <script src="calculadora.js"></script>
+    <link rel="icon" href="calculadora icon.png">
+
 </head>
+
 <body>
     <section class="container">
         <div class="calculadora">
-            <p class="resultado"></p>
+            <input type="text" id="resultado" placeholder="0" disabled>
             <table>
                 <tbody>
                     <tr>
-                        <td><button class="button-bold">C</button></td>
-                        <td><button>A</button></td>
-                        <td><button>/</button></td>
-                        <td><button>x</button></td>
+                        <td><button onclick="reset()" class="button-bold">C</button></td>
+                        <td><button onclick="apagar()"><</button></td>
+                        <td><button onclick="numeros(' / ')">/</button></td>
+                        <td><button onclick="numeros(' * ')">x</button></td>
                     </tr>
                     <tr>
-                        <td><button>7</button></td>
-                        <td><button>8</button></td>
-                        <td><button>9</button></td>
-                        <td><button>-</button></td>
+                        <td><button onclick="numeros('7')">7</button></td>
+                        <td><button onclick="numeros('8')">8</button></td>
+                        <td><button onclick="numeros('9')">9</button></td>
+                        <td><button onclick="numeros(' - ')">-</button></td>
                     </tr>
                     <tr>
-                        <td><button>4</button></td>
-                        <td><button>5</button></td>
-                        <td><button>6</button></td>
-                        <td><button>+</button></td>
+                        <td><button onclick="numeros('4')">4</button></td>
+                        <td><button onclick="numeros('5')">5</button></td>
+                        <td><button onclick="numeros('6')">6</button></td>
+                        <td><button onclick="numeros(' + ')">+</button></td>
                     </tr>
                     <tr>
-                        <td><button>1</button></td>
-                        <td><button>2</button></td>
-                        <td><button>3</button></td>
-                        <td rowspan="2"><button class="button-bold" style="height: 106px;">=</button></td>
+                        <td><button onclick="numeros('1')">1</button></td>
+                        <td><button onclick="numeros('2')">2</button></td>
+                        <td><button onclick="numeros('3')">3</button></td>
+                        <td rowspan="2"><button onclick="resultado()" class="button-bold" style="height: 106px;">=</button></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><button style="width: 142px;">0</button></td>
-                        <td><button>.</button ></td>
+                        <td colspan="2"><button onclick="numeros('0')" style="width: 126px;">0</button></td>
+                        <td><button onclick="numeros('.')">.</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 </body>
+
 </html>
