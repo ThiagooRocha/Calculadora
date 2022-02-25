@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(207, 207, 207, 0.377);
+}
+
+section.container{
+    margin: 80px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    height: 430px;
+    padding: 30px 15px;
+    background: rgb(46, 46, 46);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.397);
+}
+.calculadora input{
+    font-size: 20px;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    background: white;
+    border-radius: 3px;
+    width: 95%;
+    height: 45px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.082);
+}
+.calculadora input::placeholder{
+    color: rgba(82, 82, 82, 0.521);
+}
+.calculadora button{
+    border: 0px;
+    margin: 2px;
+    width: 60px;
+    height: 50px;
+    border-radius: 3px;
+    background: rgb(77, 77, 77);
+    color: white;
+    font-size: 15px;
+}
+.calculadora button:hover{
+    background: rgba(77, 77, 77, 0.397);
+}
+.calculadora .button-bold{
+    background: rgb(0, 140, 255);
+    font-weight: bold;
+}
+.calculadora .button-bold:hover{
+    background: rgba(0, 140, 255, 0.61);
+}
